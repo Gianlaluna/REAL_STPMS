@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>STPMS | Sports Management</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="loginView" class="login-wrap"><form id="loginForm" class="login-card">
+<div class="brand-mark">ST</div><p class="eyebrow">SPORTS MANAGEMENT</p><h1>Welcome back</h1><p class="muted">Sign in to your STPMS workspace.</p>
+<label>Username<input id="username" required autocomplete="username" placeholder="Enter username"></label>
+<label>Password<input id="password" type="password" required autocomplete="current-password" placeholder="Enter password"></label>
+<button class="primary full">Sign in</button><p id="loginError" class="error"></p>
+<div class="demo-note">First login: <b>admin</b> / <b>admin12345</b></div></form></div>
+<div id="appView" class="app-shell hidden">
+<aside class="sidebar"><div class="side-brand"><div class="brand-mark">ST</div><div><b>STPMS</b><small>Sports Management</small></div></div>
+<nav id="nav"><button class="nav-item active" data-page="dashboard">▦ &nbsp; Dashboard</button>
+<button class="nav-item" data-page="teams">◈ &nbsp; Teams</button><button class="nav-item" data-page="players">♟ &nbsp; Players</button>
+<button class="nav-item" data-page="schedules">▣ &nbsp; Schedules</button><button class="nav-item" data-page="attendance">✓ &nbsp; Attendance</button>
+<button class="nav-item" data-page="player_statistics">▤ &nbsp; Statistics</button><button class="nav-item admin-only" data-page="users">♙ &nbsp; User accounts</button></nav>
+<div class="side-bottom"><div class="user-mini"><div class="avatar">U</div><div><b id="sideName">User</b><small id="sideRole">Role</small></div></div><button id="logoutBtn" class="logout">↪ Sign out</button></div></aside>
+<main class="main"><header class="topbar"><div><span class="eyebrow">WORKSPACE</span><h2 id="pageTitle">Dashboard</h2></div><div class="top-user"><span id="welcomeName">Welcome</span><span class="avatar">U</span></div></header>
+<section id="content" class="content"></section></main></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h3 id="modalTitle">Add record</h3><button id="closeModal" class="icon-btn">✕</button></div><form id="recordForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" id="cancelModal" class="secondary">Cancel</button><button class="primary">Save record</button></div></form></div></div>
+<div id="toast" class="toast"></div><script src="app.js"></script></body></html>
